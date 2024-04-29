@@ -5,9 +5,12 @@ for(let i=0; i<botoes.length;i++){
 
         for(let j=0;j<botoes.length;j++){
             botoes[j].classList.remove("ativo");
+            texto[j].classList.remove("ativo")
         }
 
     botoes[i].classList.add("ativo");  
+    textos[j].classList.remove ("ativo")
+    
     const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-12-13T23:59:59");
 const tempoObjetivo2 = new Date("2024-11-30T23:59:59");
@@ -31,7 +34,8 @@ let dias=Math.floor (horas/24);
 
 segundos %=60;
 minutos %=60;
-horas %=24return dias+" dias "+ horas+" horas "+minutos+" minutos "+segundos+" segundos ";}
+horas %=24;
+return dias+" dias "+ horas+" horas "+minutos+" minutos "+segundos+" segundos ";}
 
       }
 }
