@@ -52,4 +52,4 @@ if (tempoFinal>0){
         setInterval(atualizaCronometro,1000);
     }
     comecaCronometro();
-}
+
