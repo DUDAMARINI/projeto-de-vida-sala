@@ -1,4 +1,5 @@
 const botoes = document.querySelectorAll(".botao");
+const textos=document.querySelectorAll (".aba-conteudo");
 
 for(let i=0; i<botoes.length;i++){
     botoes[i].onclick=function(){
@@ -10,7 +11,8 @@ for(let i=0; i<botoes.length;i++){
 
     botoes[i].classList.add("ativo");  
     textos[j].classList.remove ("ativo")
-
+    }
+}
     const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-12-13T23:59:59");
 const tempoObjetivo2 = new Date("2024-11-30T23:59:59");
@@ -42,6 +44,7 @@ if (tempoFinal>0){
     else {
         return "PRAZO FINALIZADO";
     }
+}
     function atualizaCronometro(){
         for (let i=0; i < contadores.length; i++){
             contadores[i].textContent = calculaTempo(tempos[i]);  
